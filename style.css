@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow-y: hidden;
+    background-color: rgb(229 225 221);
+}
+span {
+    font-family: 'Montserrat', sans-serif;
+}
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.refresh {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    z-index: 5;
+}
+.refresh-item1, .refresh-item2, .refresh-item3 {
+    width: 33.3%;
+    height: 100vh;
+    background-color: orange;
+}
+.max-width {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    max-width: 1500px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.navbar {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar__text span{
+    margin-right: 50px;
+}
+.left__text-item2 {
+    margin: 0 30px;
+}
+.left__text {
+    position: absolute;
+    left: -114px;
+    bottom: 160px;
+    display: flex;
+    width: 273px;
+    transform: rotate(-90deg);
+    letter-spacing: 2px;
+}
+.text__box{
+    text-transform: uppercase;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    transform: rotate(-90deg);
+    margin-top: -21%;
+    margin-left: -23%;
+}
+.text-item1 {
+    font-size: 100px;
+    font-weight: 800;
+    margin-bottom: 30px;
+    opacity: 1;
+}
+.text-item2 {
+    position: absolute;
+    font-size: 136px;
+    font-weight: 600;
+    color: rgb(255, 196, 0);
+    margin-top: -100px;
+    z-index: -1;
+    margin-left: -40px;
+}
+.text-item3 {
+    font-size: 40px;
+    font-weight: 600;
+    width: 500px;
+    opacity: 1;
+}
+.text-item4 {
+    width: 300px;
+    margin-top: 15px;
+    opacity: 1;
+}
+.right__text {
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+}
+.right__text-items {
+    font-size: 35px;
+    font-weight: 900;
+    margin-left: 10pc;
+    transform: rotate(-90deg);
+}
+.down__text {
+    font-weight: 900;
+    margin-top: 20px;
+    transform: rotate(180deg);
+}
+.img {
+    padding-left: 47%;
+}
+.img img {
+    width: 70%;
+    height: 93vh;
+    object-fit: contain;
+}
+@media (max-width:767px) {
+    .wrapper {
+        display: none;
+    }
+    .mobile {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        color: #fff;
+        background-color: black;
+        font-family: sans-serif;  
+    }
+}
